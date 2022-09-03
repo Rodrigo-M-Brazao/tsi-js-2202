@@ -74,7 +74,7 @@ let gender = "M";
 let resultado = gender === 'M'? `é do gênero Masculino`: gender === 'F'? `é do gênero Feminino`: `Preferiu não declarar`;
 console.log("\n", resultado);
 
-let diaMes = parseInt(prompt("Digite o dia do mês: "));
+// let diaMes = parseInt(prompt("Digite o dia do mês: "));
 let evenOrOdd = diaMes %2 == 0 ? `É par` : diaMes !== NaN ? `É impar` : 'Valor inválido';
 
 console.log('\n', evenOrOdd);
