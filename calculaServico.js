@@ -6,8 +6,8 @@ O cálculo deve ficar obrigatoriamente em uma função.
 */
 
 //Declaração de variáveis que recebem algo;
-let servico = prompt("Qual serviço você deseja?");
-let horas = prompt("Em quantas horas você quer o serviço?");
+let servico = prompt("Qual serviço você deseja?\nWireframe\nBanco de dados\nSite estático\nSite dinâmico\nAplicação Web Mobile\nManutenção do site");
+let horas = prompt("Em quantas horas você quer o serviço?\n16\n24\n36\n48\n72");
 
 // Matriz com nome e valores de cada serviço com o quanto será cobrado por hora trabalhada
 let matriz = [
@@ -37,7 +37,7 @@ const checarServico = (servico, horas) => {
         else if(horas <= 48){
             escreva(`O valor é: R$ ${matriz[4][indexValor]},00`);
         }
-        else if(horas <= 72){
+        else if(horas >= 72){
             escreva(`O valor é: R$ ${matriz[5][indexValor]},00`);
         }
     }
@@ -64,7 +64,7 @@ checarServico(servico, horas);
     
 //     for(let j = 0; j < 6; j++){
         
-//         escreva(` ${matriz[i][j]} `);
+//         escreva(` ${matriz[i][j]} |`);
 //     }
 //     escreva('<br>');
 // }
