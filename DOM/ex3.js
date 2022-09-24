@@ -21,6 +21,8 @@ let e;
 
 // e = document.querySelector('div .row');
 // e = document.querySelector('span');
-e = document.querySelector('input#task');
-
+// e = document.querySelector('input#task');
+// e = document.querySelector('li:first-child').innerText;
+// e = document.querySelector('li:last-child').innerText;
+e = document.querySelector('li:nth-child(3)').innerText;
 console.log(e);
