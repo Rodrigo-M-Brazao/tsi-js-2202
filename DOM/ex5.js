@@ -60,22 +60,10 @@ btnAdd.addEventListener('click', event => {
     event.preventDefault();
     let li = criarElemento('li');
 
-    li.className = 'collection-item';
-
-    li.id = 'novo-item';
-
-    let link = criarElemento('a');
-
-    link.className = "delete-item secondary-content";
-    link.setAttribute('href', '#');
-
-
-    let icone = criarElemento('i');
-
-    icone.className = "fa fa-remove";
+    
     li.appendChild(document.createTextNode(`${task.value}`));
 
-    link.appendChild(icone);
+    li.appendChild(icone);
 
     li.appendChild(link);
 

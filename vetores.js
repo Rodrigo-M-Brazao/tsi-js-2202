@@ -12,6 +12,6 @@ const trataDados = (valor, indice) => {
 }
 friends.forEach(trataDados);
 
-friends.map(valor => {
-    console.log(valor);
-});
+// friends.map(valor => {
+//     console.log(valor);
+// });
