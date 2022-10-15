@@ -23,5 +23,30 @@ document.querySelector('#mostrar').innerText = sessionStorage.getItem('dadosDoUs
 
 //Para apagar no session storage
 
+// removeItem();
 // sessionStorage.removeItem('dadosDoUsuario');
+
+let vetor = ['pera', 'banana', 'manga'];
+
+/*Para guardar algo que não é string no 
+local e/ou session Storage precisamos
+converter para string usando JSON.stringify() 
+transformando vetor e objetos em string
+*/
+sessionStorage.setItem('frutas', JSON.stringify(vetor));
+
+//Recupera os dados do session como array
+let recuperaDado = JSON.parse(sessionStorage.getItem('frutas'));
+
+//Adiciona elementos no array
+recuperaDado[3] = 'morango';
+recuperaDado.push('maça');
+console.log(recuperaDado);
+
+//Transforma o array em string
+let strRecuperaDado = JSON.stringify(recuperaDado);
+console.log(strRecuperaDado);
+
+// Coloca no sessionStorage
+sessionStorage.setItem('frutas', strRecuperaDado);
 
