@@ -5,7 +5,6 @@ const lista = document.querySelector('.collection');
 const filtro = document.getElementById('filtro');
 const btnLimpar = document.querySelector('.limpar-tarefas');
 
-let tarefas = [];
 
 function carregaMonitoresDeEventos(){
     //Adiciona tarefa
@@ -95,7 +94,7 @@ function filtraTarefa(evento){
 
 
 function gravaTarefa(tarefa){
-   
+    let tarefas = [];
     let tarefaDoStorage = localStorage.getItem('tarefas');
     if(tarefaDoStorage != null){
         tarefas = JSON.parse(tarefaDoStorage);
