@@ -1,5 +1,5 @@
 const request = new XMLHttpRequest();
-const randomNum = Math.floor(Math.random() * 100) +1;
+
 request.addEventListener('readystatechange', () => {
     let isRequestOk = request.status === 200 && request.readyState === 4;
     let isRequestNotOk = request.readyState === 4;
@@ -12,5 +12,5 @@ request.addEventListener('readystatechange', () => {
     }
 });
 
-request.open('GET', `http://numbersapi.com/${randomNum}/math`);
+request.open('GET', `http://numbersapi.com/random/math`);
 request.send();
